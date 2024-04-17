@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <title>Опрос</title>
     <style>
+        html, body {
+            background-color: transparent;
+        }
+
+        body {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
         .survey-button {
-            padding: 10px 20px;
-            background-color: #800080; /* фиолетовый цвет */
-            color: white;
-            border: none;
-            border-radius: 15px; /* скругленные углы */
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            font-size: 35px;
+            --font-family: Montserrat;
+            font-weight: normal;
+            font-style: normal;
+            color: rgb(255, 255, 255);
+            background-color: rgb(101, 26, 193);
+            --hover-text-color: #FFFFFF;
+            --hover-bg-color: #651ac1;
+            border: 0px solid rgb(101, 26, 193);
+            border-radius: 10px;
+            box-shadow: rgba(15, 15, 15, 0.1) 2px 1px 0px 0px;
+            padding: 13px 23px;
         }
 
         .survey-button:hover {
