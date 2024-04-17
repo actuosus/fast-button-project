@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Опрос</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         html, body {
             background-color: transparent;
@@ -17,27 +20,28 @@
 
         .survey-button {
             font-size: 35px;
-            --font-family: Montserrat;
+            font-family: Montserrat, sans-serif;
             font-weight: normal;
             font-style: normal;
             color: rgb(255, 255, 255);
             background-color: rgb(101, 26, 193);
-            --hover-text-color: #FFFFFF;
-            --hover-bg-color: #651ac1;
             border: 0px solid rgb(101, 26, 193);
             border-radius: 10px;
             box-shadow: rgba(15, 15, 15, 0.1) 2px 1px 0px 0px;
             padding: 13px 23px;
+            appearance: none;
         }
 
         .survey-button:hover {
+            text-color: #FFFFFF;
             background-color: #a500ff; /* более светлый фиолетовый при наведении */
+            bg-color: #651ac1;
         }
     </style>
 </head>
 <body>
-    <button class="survey-button" onclick="window.location.href='https://forms.yandex.ru/u/661f6c9584227c33dcb42e92/?page=1';">
+    <a class="survey-button" href="https://forms.yandex.ru/u/661f6c9584227c33dcb42e92/?page=1">
         Пройти опрос
-    </button>
+    </a>
 </body>
 </html>
